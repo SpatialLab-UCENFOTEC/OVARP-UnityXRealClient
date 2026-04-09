@@ -70,3 +70,7 @@ crashlytics-build.properties
 
 # macOS
 .DS_Store
+
+# Unity debug exports (often contain absolute local paths; do not ship)
+OVAF_BackUpThisFolder_ButDontShipItWithYourGame/
+OVAF_BurstDebugInformation_DoNotShip/

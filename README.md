@@ -13,14 +13,14 @@
 </p>
 
 <p align="center">
-  <em>Part of the <a href="https://github.com/SpatialLab-UCENFOTEC">SpatialLab</a> research initiative at Universidad CENFOTEC — cocreated with <a href="https://github.com/AURAxLab">AURAxLab</a> (Universidad de Costa Rica)</em>
+  <em>Reference Unity implementation of the OVARP client protocol for XREAL devices (XREAL XR Plugin instead of OpenXR for Quest).</em>
 </p>
 
 ---
 
 ## ✨ What is this repo?
 
-**[OVARP-UnityXRealClient](https://github.com/SpatialLab-UCENFOTEC/OVARP-UnityXRealClient)** is the **XREAL**-targeted Unity frontend for **[OVARP](https://github.com/AURAxLab/OVARP)** — the **Open Virtual Agent Research Platform** — maintained with [AURAxLab](https://github.com/AURAxLab) (UCR) and [SpatialLab](https://github.com/SpatialLab-UCENFOTEC) (Universidad CENFOTEC). It shares the same runtime architecture as the [Meta Quest client](https://github.com/SpatialLab-UCENFOTEC/OVARP-UnityMetaQuestClient): it connects to an OVARP-compatible backend and renders a fully animated 3D avatar — synchronized speech, lip-sync, facial emotions, gestures, gaze, and spatial movement — using the **XREAL XR Plugin** (`com.xreal.xr`) instead of OpenXR for Quest.
+**This repository** is an **XREAL**-targeted Unity frontend for **OVARP** (Open Virtual Agent Research Platform). It shares the same runtime architecture as the Meta Quest / OpenXR variant: it connects to an OVARP-compatible backend and renders a fully animated 3D avatar — synchronized speech, lip-sync, facial emotions, gestures, gaze, and spatial movement — using the **XREAL XR Plugin** (`com.xreal.xr`) instead of OpenXR for Quest.
 
 - 🎙️ **Voice capture** — Microphone recording with WAV trimming, streamed to the server as base64 audio
 - 👄 **Lip-sync** — Real-time amplitude analysis drives blendshape-based mouth animation
@@ -98,13 +98,13 @@
 - Unity 6 (URP)
 - **XREAL XR Plugin** — this project references `com.xreal.xr` as a **local tarball** (`file:../com.xreal.xr.tar.gz`). Place the vendor `com.xreal.xr.tar.gz` next to the repository root (sibling of the cloned folder) **or** update the path in `Packages/manifest.json` to match your machine.
 - XREAL device (for XR deployment) or desktop for editor testing
-- A running **[OVARP server](https://github.com/AURAxLab/OVARP)** on the same LAN, **or** an [OpenAI API key](https://platform.openai.com/api-keys) for the fallback path
+- A running **OVARP-compatible WebSocket server** on the same LAN, **or** an [OpenAI API key](https://platform.openai.com/api-keys) for the fallback path
 
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/SpatialLab-UCENFOTEC/OVARP-UnityXRealClient.git
+git clone <this-repository-url>
+cd <repository-folder>
 ```
 
 Open the project in Unity 6 with the Universal Render Pipeline. Ensure the **XREAL** package resolves (see above).
@@ -206,7 +206,7 @@ The server responds across the following topics:
 ## 📁 Project Structure
 
 ```
-OVARP-UnityXRealClient/
+<repo>/
 │
 ├── Assets/
 │   ├── Scenes/
@@ -258,16 +258,12 @@ OVARP-UnityXRealClient/
 
 ---
 
-## 👤 Authors & cocreators
+## Contributing
 
-**[Briam Mora](https://linktr.ee/briammora)** — Entrepreneur & Researcher, SpatialLab, Universidad CENFOTEC
-
-📧 [bmora@ucenfotec.ac.cr](mailto:bmora@ucenfotec.ac.cr) · [SpatialLab — spatiallab.ucenfotec.ac.cr](https://spatiallab.ucenfotec.ac.cr/) · [linkedin.com/in/briammora](https://www.linkedin.com/in/briammora/)
-
-**[AURAxLab](https://github.com/AURAxLab)** — Universidad de Costa Rica (UCR); cocreators of OVARP, including the **[reference server](https://github.com/AURAxLab/OVARP)** this Unity client targets over WebSocket.
+Issues and pull requests are welcome.
 
 ---
 
 ## 📜 License
 
-MIT License © 2026 [SpatialLab — Universidad CENFOTEC](https://github.com/SpatialLab-UCENFOTEC) · Backend reference: [AURAxLab/OVARP](https://github.com/AURAxLab/OVARP) · Sibling client: [OVARP-UnityMetaQuestClient](https://github.com/SpatialLab-UCENFOTEC/OVARP-UnityMetaQuestClient)
+MIT License. Add or consult a `LICENSE` file at the repository root for the full text.

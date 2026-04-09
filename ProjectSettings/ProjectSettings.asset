@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: SpatialLab
+  companyName: OVARP
   productName: OVARP Xreal Client
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -169,7 +169,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.spatiallab.ovarpxrealclient
+    Android: com.ovarp.xrealclient
     Standalone: com.DefaultCompany.3D-Project
   buildNumber:
     Standalone: 0
