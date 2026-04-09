@@ -264,6 +264,8 @@ Issues and pull requests are welcome.
 
 ---
 
-## 📜 License
+## License
 
-MIT License. Add or consult a `LICENSE` file at the repository root for the full text.
+MIT License © 2026 [Anonymous]
+
+See [LICENSE](LICENSE) for the full license text.
